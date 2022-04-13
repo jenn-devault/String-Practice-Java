@@ -1,0 +1,67 @@
+public class StringPractice {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Scanner kb=new Scanner(System.in);
+       
+       String fname;
+        String lname;
+        
+        System.out.println("Enter your first name");
+        fname=kb.next().toUpperCase();
+        System.out.println("Enter your last name");
+        lname=kb.next().toUpperCase();
+        
+        
+        char finit;
+        char linit;
+        int len=lname.length();
+        
+        
+        finit=fname.charAt(0);
+        linit=lname.charAt(len-1);
+        
+        System.out.println(finit);
+        System.out.println(linit);
+        
+        
+                
+
+
+        
+        String s1= "Jennifer DeVault";
+        int index1=s1.indexOf("e");
+        int index2=s1.lastIndexOf("e");
+        
+        System.out.println(index1+" "+index2);
+       
+        int index3 =s1.indexOf(" ");
+        String lastname;         //substring of main string
+        
+        lastname= s1.substring(index3+1);
+        
+        System.out.println(lastname);
+        
+        
+        String s1= "hello";
+        String s2="mello";
+       
+        System.out.println(s1.equalsIgnoreCase((s2));
+        
+      
+        
+        
+        String s3= "abc@gmail.com";
+        System.out.println(s3.startsWith("a"));
+        System.out.println(s3.contains("@"));
+        System.out.println(s3.endsWith(".com"));
+        
+        
+        
+        // TODO code application logic here
+    }
+    
+}
